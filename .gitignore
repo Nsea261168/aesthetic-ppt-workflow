@@ -1,0 +1,29 @@
+# Generated decks and exports
+*.ppt
+*.pptx
+*.pdf
+*.key
+
+# Rendered previews and generated backgrounds
+assets/imagegen/
+outputs/
+renders/
+previews/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Private source materials and evidence
+evidence/
+references/private/
+source/
+briefs/
+*.docx
+*.xlsx
+*.csv
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+desktop.ini
