@@ -5,10 +5,34 @@ Use this reference when making or revising PPTs with the three-step workflow.
 ## Three-Step Strategy
 
 1. Content outline: read the brief and assets, then produce page order, subtitles, body points, and visual suggestions. Do not create the PPT yet.
-2. Visual preview: study reference images and use generated imagery to explore full-deck directions or key page backgrounds. Compare mood, rhythm, density, hierarchy, and readability.
-3. Editable PPT: use generated backgrounds plus editable text, labels, frames, evidence photos, diagrams, footers, page numbers, and speaker notes.
+2. Visual preview: study reference images and use generated imagery to explore full-deck directions or key page backgrounds. Compare mood, rhythm, density, hierarchy, and readability. Ask the user which direction works and why.
+3. Editable PPT: use generated backgrounds plus editable text, labels, masks, frames, evidence photos, diagrams, footers, page numbers, and speaker notes.
 
 After inserting a generated background, redesign the slide around that image's composition.
+
+## Preference Learning Loop
+
+The skill's differentiator is not only output quality, but the ability to learn taste during the conversation.
+
+Use this loop:
+
+1. Infer the initial visual needs from the content, audience, and speech situation.
+2. Produce several meaningfully different preview directions.
+3. Ask the user to choose, reject, or combine directions.
+4. Translate feedback into a short style brief.
+5. Study any user-provided examples and extract reusable design rules.
+6. Generate or revise backgrounds with those rules.
+7. Build the final editable PPT around the confirmed visual direction.
+
+Good questions are specific:
+
+- "Which version feels closest to the tone: calm, energetic, technical, poetic, serious, or ceremonial?"
+- "Which page feels visually cheap or overworked?"
+- "Should the deck lean more natural, technological, editorial, corporate, cinematic, or academic?"
+- "Which reference image best explains the text-background relationship you want?"
+- "Do you prefer text on a quiet solid area, a translucent carrier, or a fading image edge?"
+
+Avoid generic questions like "Do you like it?" unless the user only wants a quick reaction.
 
 ## Learning Beauty
 
@@ -22,8 +46,15 @@ When studying a reference, extract:
 - path: how a curve, ridge, road, river, trunk, light beam, or vortex guides the reading order
 - density: how much information the page can hold before it feels cheap
 - restraint: what the reference deliberately leaves empty
+- interaction: how much the image should lead, and how much the text system should control
 
 Good PPT design is not more decoration. It is the ability to make the viewer understand where to look, what matters, and why the slide feels inevitable.
+
+When a user gives examples, produce a concise reading of the examples before revising:
+
+- "I will learn the pale text zones, the mountain-like flow curve, and the restrained accent color."
+- "I will avoid the heavy icons, dense decoration, and centered circular process diagrams."
+- "I will keep the image strong but reserve readable zones for title and logic labels."
 
 ## Typography
 
@@ -106,6 +137,23 @@ Ask for:
 - no random sparkles or particle clutter
 
 Save generated backgrounds into `assets/imagegen/`. If the image-generation tool cannot provide a path, ask the user to manually save them. Do not silently replace them with reference screenshots or vector drawings.
+
+Use generated backgrounds for:
+
+- atmosphere and emotional tone
+- spatial depth and visual path
+- cover and closing scenes
+- system metaphors such as vortex, horizon, tree, ridge, or light
+- quiet zones where editable PPT text can sit
+
+Use PPT tools for:
+
+- actual readable text
+- simple translucent masks
+- labels and diagram nodes
+- evidence-photo placement
+- footers, page numbers, and notes
+- precise alignment that must remain editable
 
 ## Useful Page Patterns
 

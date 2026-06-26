@@ -1,5 +1,5 @@
 interface:
   display_name: "Aesthetic PPT Workflow"
-  short_description: "用三步法制作更有审美判断的 PPT。"
+  short_description: "通过预览和偏好学习生成更合审美的 PPT。"
   brand_color: "#D6873A"
-  default_prompt: "Use $aesthetic-ppt-workflow to turn my brief, references, and evidence images into a polished presentation workflow."
+  default_prompt: "Use $aesthetic-ppt-workflow to learn my visual preferences from references and create a polished editable PPT workflow."

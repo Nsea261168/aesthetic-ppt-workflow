@@ -1,10 +1,12 @@
 # Aesthetic PPT Workflow
 
-A Codex skill for making polished, editable PowerPoint decks through a three-step workflow:
+A Codex skill for making polished, editable PowerPoint decks through an aesthetic-learning workflow.
+
+This skill is not just a PPT generator. Its core idea is that a good agent should learn the user's taste before producing the final deck:
 
 1. **Outline first**: clarify story, page order, subtitles, body points, and visual intent before touching PPT.
-2. **Visual preview second**: study references, generate background directions, and compare page rhythm before committing to a style.
-3. **Editable PPT third**: build the final `.pptx` with editable text, labels, frames, photos, diagrams, notes, and generated backgrounds.
+2. **Aesthetic learning second**: create different preview directions, ask the user what they prefer, study user examples, and generate background imagery around that taste.
+3. **Editable PPT third**: build the final `.pptx` with generated backgrounds plus editable text, labels, masks, frames, photos, diagrams, notes, and page numbers.
 
 The goal is not to add more decoration. The goal is to help Codex learn visual judgment: how to read references, understand why a page feels beautiful, and turn that judgment into a usable presentation.
 
@@ -12,11 +14,24 @@ The goal is not to add more decoration. The goal is to help Codex learn visual j
 
 - Turning rough briefs into clear PPT outlines.
 - Creating 3 visual preview directions before final production.
+- Asking targeted style-preference questions instead of guessing blindly.
 - Learning from reference images without copying them.
-- Using generated images as atmosphere, structure, or background.
+- Using image generation for atmosphere, structure, and background scenes.
+- Using PPT tools for editable text, simple masks, labels, diagrams, and evidence placement.
 - Re-composing text and diagrams around the image instead of merely replacing the wallpaper.
 - Producing editable PowerPoint slides instead of flattened screenshots.
 - Avoiding generic circular-arrow process diagrams and flat card grids.
+
+## Why This Skill Is Different
+
+Many PPT workflows can produce decent slides. This skill focuses on **learning taste**.
+
+It treats every preview, user comment, and reference image as evidence:
+
+- If the user likes one preview but dislikes another, Codex should ask what caused that reaction.
+- If the user uploads examples, Codex should extract layout rules: text zones, color rhythm, image weight, curve logic, density, and restraint.
+- If the deck needs generated imagery, Codex should use image generation to create background structure and mood.
+- If the final file must be useful, Codex should use PowerPoint tooling to keep text, labels, masks, and diagrams editable.
 
 ## Install
 
@@ -42,12 +57,12 @@ Use $aesthetic-ppt-workflow to help me create a PPT from this brief.
 
 ```text
 aesthetic-ppt-workflow/
-├─ SKILL.md
-├─ README.md
-├─ agents/
-│  └─ openai.yaml
-└─ references/
-   └─ style.md
+|-- SKILL.md
+|-- README.md
+|-- agents/
+|   `-- openai.yaml
+`-- references/
+    `-- style.md
 ```
 
 ## Recommended Workflow
@@ -70,7 +85,7 @@ The outline should include:
 - body points
 - visual suggestion
 
-### Step 2: Preview
+### Step 2: Preview And Learn Preference
 
 Ask Codex to generate or design multiple visual directions.
 
@@ -80,7 +95,13 @@ Example:
 Based on the outline, generate 3 full-deck visual preview collages. Each collage should include all slides in order, all thumbnails must be 16:9, and each direction should use a coherent visual system.
 ```
 
-Use your own reference images if you have them. The skill tells Codex to learn:
+Then respond with your preference:
+
+```text
+I prefer version B's clean background and version C's page 4 flow. Version A feels too loud. Please learn from these two reference images: I like the pale text zones, curved visual path, and restrained accent color.
+```
+
+The skill tells Codex to learn:
 
 - color pairing
 - text placement
@@ -88,6 +109,7 @@ Use your own reference images if you have them. The skill tells Codex to learn:
 - path-like composition
 - image-to-text balance
 - information density
+- what the user explicitly likes and dislikes
 
 ### Step 3: Editable PPT
 
@@ -98,6 +120,11 @@ Example:
 ```text
 Use the selected preview direction. Build an editable 16:9 PPT. Use generated backgrounds as visual assets, but keep text, labels, diagrams, page numbers, and notes editable.
 ```
+
+The final deck should use image generation and PPT tooling together:
+
+- image generation creates background mood, spatial depth, covers, closing pages, and metaphor scenes
+- PPT tooling creates editable titles, body text, masks, labels, diagrams, evidence-photo frames, footers, and speaker notes
 
 ## Design Philosophy
 
