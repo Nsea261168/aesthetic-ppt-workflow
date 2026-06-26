@@ -61,9 +61,37 @@ aesthetic-ppt-workflow/
 |-- README.md
 |-- agents/
 |   `-- openai.yaml
+|-- examples/
 `-- references/
     `-- style.md
 ```
+
+## Style Examples
+
+The `examples/` folder is intentionally empty in the public repository.
+
+Put your own style references there when using this skill locally:
+
+- PPT decks whose visual style you want Codex to learn
+- exported slide screenshots
+- reference images for color, layout, typography, or atmosphere
+- before/after slides that explain your taste
+
+Then ask Codex to study them:
+
+```text
+Use $aesthetic-ppt-workflow. Study the files in examples/ and summarize what visual rules you should learn before creating my PPT.
+```
+
+Good examples help Codex learn:
+
+- where text should sit
+- how much visual density is acceptable
+- what kind of background feels premium rather than noisy
+- how imagegen backgrounds should leave quiet zones for editable PPT text
+- what masks, labels, and simple shapes should be created with PPT tools
+
+The default `.gitignore` avoids committing common private slide assets such as `.pptx`, `.pdf`, images, spreadsheets, and documents. This keeps the public repo clean while still letting each user keep their own local reference library.
 
 ## Recommended Workflow
 
